@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+html {
+    font-family: 'Signika', sans-serif;
+    color: blanchedalmond;
+}
+body{
+    background: #00C993;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    padding: 0 1em 0 1em;
+
+}
+
+.mainbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    color: midnightblue;
+    height: 200px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 3px solid midnightblue;
+    width: 100%;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+table tr {
+    background-color: #f8f8f8;
+}
+
+
+table td,th {
+    padding: 12px 15px;
+    text-align: center;
+    color: midnightblue;
+}
+
+table th {
+    background-color: midnightblue;
+    color: blanchedalmond;
+}
+
+
+/* Responsiveness */
+
+/* desktop:1200px;
+laptop:1024px;
+tablet:768px;
+phone:480px; */
+
+@media (max-width:954px){
+    h1,th {
+        display: none;
+    }
+
+    table, tbody, tr, td {
+        border: 0px;
+        display: block;
+        width: 100%;
+    }
+
+    tbody{
+        margin-top: -100px;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td::before {
+        content: attr(data-label);
+    }
+}
